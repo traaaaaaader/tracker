@@ -1,5 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Navbar } from './widgets/navbar'
+</script>
 
-<template></template>
+<template>
+  <div class="flex flex-col h-screen">
+    <Navbar />
+    <RouterView />
+  </div>
+</template>
 
 <style scoped></style>
