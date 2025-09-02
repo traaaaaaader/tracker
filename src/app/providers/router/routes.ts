@@ -1,23 +1,23 @@
 import type { RouteRecordRaw } from 'vue-router'
 
-import { Home } from '@/pages/home'
-import { TrackCreate } from '@/pages/track-create'
-import { TrackRead } from '@/pages/track-read'
+import { HomePage } from '@/pages/home'
+import { HabitCreatePage } from '@/pages/habit-create'
+import { HabitReadPage } from '@/pages/habit-read'
 
 export const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
-    component: Home,
+    component: HomePage,
   },
   {
     path: '/create',
     name: 'create',
-    component: TrackCreate,
+    component: HabitCreatePage,
   },
   {
     path: '/read',
     name: 'read',
-    component: TrackRead,
+    component: HabitReadPage,
   },
 ]
